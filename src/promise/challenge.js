@@ -1,5 +1,5 @@
 // importamos la funcion
-const fetchData = require("../Utils/fetchData");
+const fetchData = require("../utils/fetchData");
 // declaramos la ruta de la api
 const API = "https://rickandmortyapi.com/api/character/";
 
@@ -22,5 +22,5 @@ fetchData(API)
   })
   // si hay error
   .catch((err) => {
-    console.log(err);
+    console.error(err);
   });
